@@ -1,0 +1,16 @@
+/* .carousel-item {
+    height: 450px;
+    
+} */
+.modal-dialog{
+    max-width: 800px;
+}
+.modal-body{
+    padding: 0;
+}
+.modal-header{
+    padding: 0;
+}
+.btn-primary{
+    border:none;
+}

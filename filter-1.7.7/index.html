@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/nouislider.min.css">
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+
+</head>
+
+<body>
+
+
+
+    <section class="cards">
+
+
+
+
+        <div class="filter" onclick="filterOnn()">
+            <div class="storeys">
+                <h5>Этажность:</h5>
+                <div class="storeys-btns">
+                    <button data-f="0" class="btn">Все</button>
+                    <button data-f="1" class="btn">1</button>
+                    <button data-f="1.5" class="btn">1.5</button>
+                    <button data-f="2" class="btn">2</button>
+                </div>
+            </div>
+            <div class="br"></div>
+            <div class="area">
+                <h5>Площадь:</h5>
+                <div class="area-btns">
+                    <button data-a="100" class="btn-area">Менее 100 м2</button>
+                    <button data-a="150" class="btn-area">100 - 150 м2</button>
+                    <button data-a="200" class="btn-area">150 - 200 м2</button>
+                    <button data-a="250" class="btn-area">Все</button>
+
+                </div>
+
+            </div>
+
+            <div class="br"></div>
+            <div class="price">
+                <h5 class="title-price">Цена:</h5>
+
+                <div class="filters-price__slider" id="range-slider"></div>
+
+                <div class="filter-price__inputs">
+                    <label for="input-0" class="filter-price__label">
+                        <span class="price-span">От</span>
+                        <input id="input-0" type="number" min="500" max="9000000" placeholder="0">
+                        <span class="price-span">₽</span>
+                    </label>
+                    <label for="input-1" class="filter-price__label">
+                        <span class="price-span">До</span>
+                        <input id="input-1" type="number" min="500" max="9999999" placeholder="9999999">
+                        <span class="price-span">₽</span>
+                    </label>
+                </div>
+
+            </div>
+
+
+
+
+
+        </div>
+
+        <div class="gallery-grid container">
+
+        </div>
+
+    </section>
+
+
+
+    <div class="modal-pictures"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="js/nouislider.min.js"></script>
+
+    <script src="js/fetch.js"></script>
+    <script src="js/filter.js"></script>
+    <script src="js/range-slider.js"></script>
+</body>
+
+</html>
